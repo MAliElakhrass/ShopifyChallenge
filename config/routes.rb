@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'images#home'
+  root 'images#index'
   get '/signup', to: 'users#new'
   resources :users
   get    '/login',   to: 'sessions#new'

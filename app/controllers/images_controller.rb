@@ -1,15 +1,12 @@
 class ImagesController < ApplicationController
     before_action :logged_in_user
-
-    def home
-    end
   
     def new
     	@image  = current_user.images.new
     end
   
     def index
-    	@images = image.all
+    	@images = Image.where(user_id: current_user.id).or(Image.where(is_protected: false))
     end
   
     def create
