@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my Shopify Developer Challenge. This app allows the user to add, edit and remove an image from a repository.
 
-Things you may want to cover:
+In order to run the application, run the following commands:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ bundle install
+$ rails s
+```
